@@ -1,0 +1,39 @@
+# Core AWS SDK - very active, supports Python 3.11–3.14
+boto3>=1.42.30
+
+# Environment variable management from .env files
+python-dotenv>=1.0.1
+
+# -------------------------------
+# LangChain ecosystem (latest stable versions as of Jan 2026)
+# -------------------------------
+
+# Main LangChain framework
+langchain>=0.3.0
+
+# Required core abstractions (documents, prompts, etc.)
+langchain-core>=0.3.0
+
+# Community loaders & utilities (PyPDFLoader, etc.)
+langchain-community>=0.3.0
+
+# Text splitting utilities (RecursiveCharacterTextSplitter, etc.)
+langchain-text-splitters>=0.3.0
+
+# AWS Bedrock integration
+langchain-aws>=0.2.0
+
+# Chroma vector store integration
+langchain-chroma>=0.2.0
+
+# Chroma vector database itself
+chromadb>=0.5.0
+
+# Modern pure-Python PDF parser
+pypdf==6.4.0
+
+langchain-redis 
+
+redis
+
+rank_bm25 

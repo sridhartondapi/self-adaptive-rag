@@ -1,0 +1,39 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+venv_*/
+.venv/
+
+# Databases / caches
+*.db
+*.sqlite
+.cache/
+cache/
+
+# Vector databases
+data/chroma_db/
+vector_db/
+chroma_db/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Build files
+dist/
+build/
+
+# Mac files
+.DS_Store
+
+# IDE
+.vscode/

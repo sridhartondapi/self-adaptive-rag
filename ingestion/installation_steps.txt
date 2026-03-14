@@ -1,0 +1,8 @@
+1. In terminal,brew install python@3.11
+2. In the project folder, # In your project folder
+python3.11 -m venv .venvs/ingestion311 (or) # Create a new virtual environment as /opt/homebrew/bin/python3.11 -m venv .venvs/ingestion311
+3. source .venvs/ingestion311/bin/activate
+4. pip install --upgrade pip
+5. pip install -r requirements.txt
+6. python3 --version ( It should be 3.11.XX)
+7. pip list

@@ -1,0 +1,84 @@
+# Python version target (for documentation / CI)
+# python==3.11.*
+
+# -------------------------------
+# Core AWS & environment utilities
+# -------------------------------
+boto3>=1.34.0                  # Core AWS SDK - very active, supports Python 3.11–3.14
+python-dotenv>=1.0.1           # .env file support
+
+# -------------------------------
+# LangChain core + required sub-packages (v1.x line is current stable in 2026)
+# -------------------------------
+langchain>=1.2.0
+langchain-core>=1.2.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+
+# Graph / stateful agents
+langgraph>=1.0.0,<2.0          # LangGraph – graphs, persistence, human-in-the-loop
+
+# Observability / tracing
+langsmith>=0.3.0,<0.4          # LangSmith tracing, evaluation, playground
+
+# -------------------------------
+# Model providers & integrations
+# -------------------------------
+langchain-aws>=1.0.0      # AWS Bedrock + other AWS LLM integrations
+langchain-cohere>=0.5.0,<0.6   # Cohere (Chat + Embed v4 support)
+cohere>=5.0.0,<6.0             # Official Cohere SDK (required by langchain-cohere)
+
+# -------------------------------
+# Search / retrieval / vector stores
+# -------------------------------
+tavily-python>=0.5.0,<0.6      # Tavily search (very popular real-time search tool)
+faiss-cpu>=1.8.0,<1.9          # Local dense vector store (CPU version)
+rank_bm25>=0.2.2               # BM25 sparse retrieval (lightweight)
+
+# -------------------------------
+# Evaluation & datasets
+# -------------------------------
+ragas>=0.1.0,<0.2              # RAG evaluation framework
+datasets>=3.0.0,<4.0           # Hugging Face datasets (used in eval / fine-tuning)
+
+# -------------------------------
+# Tracing alternatives / observability
+# -------------------------------
+langfuse>=2.0.0,<3.0           # Langfuse tracing (OpenTelemetry compatible alternative)
+
+# -------------------------------
+# General utilities & web
+# -------------------------------
+pydantic>=2.5.0,<3.0           # Data validation / settings (v2 is standard)
+beautifulsoup4>=4.12.0,<5.0    # HTML parsing
+requests>=2.31.0,<3.0          # HTTP client
+
+# -------------------------------
+# Development & performance tools
+# -------------------------------
+ipython>=8.18.0                # Better interactive shell / notebooks
+psutil>=5.9.0                  # Process & memory monitoring
+
+# -------------------------------
+# API / serving
+# -------------------------------
+fastapi>=0.115.0,<0.116       # Modern async API framework
+uvicorn[standard]>=0.30.0,<0.31 # ASGI server (with websockets, http-tools,…)
+
+# -------------------------------
+# Serverless / AWS Lambda support
+# -------------------------------
+mangum>=0.17.0,<0.18           # ASGI → Lambda adapter (FastAPI + Mangum is common pattern)
+
+langchain-chroma>=1.1.0,<1.2           # Official LangChain ↔ Chroma integration
+
+# Optional / nice-to-have depending on your RAG or agent needs
+ chromadb>=0.5.0               # If you want local Chroma instead of or in addition to FAISS
+ pypdf>=5.0.0                  # Modern PDF loader/parser (alternative to old PyPDF2)
+
+ # -------------------------------
+# Load testing
+# -------------------------------
+locust>=2.16.0
+
+langchain-redis
