@@ -1,0 +1,1 @@
+Sample report document for vector ingestion testing.
