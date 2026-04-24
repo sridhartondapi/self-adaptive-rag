@@ -82,3 +82,5 @@ langchain-chroma>=1.1.0,<1.2           # Official LangChain ↔ Chroma integrati
 locust>=2.16.0
 
 langchain-redis
+
+PyPDFLoader

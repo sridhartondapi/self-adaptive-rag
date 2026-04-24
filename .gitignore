@@ -38,4 +38,9 @@ build/
 # IDE
 .vscode/
 
-ingestion/source/reports/
+# Ignore only real documents
+*.pdf
+
+# Allow dummy files
+!ingestion/source/reports/*.txt
+!ingestion/source/reports/README.md
